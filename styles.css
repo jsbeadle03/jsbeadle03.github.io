@@ -249,6 +249,46 @@ audio {
   font-style: italic;
 }
 
+.studio-left {
+  float: left;
+  width: 58%;
+}
+
+.studio-right {
+  float: right;
+  width: 38%;
+}
+
+.equipment-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border: 1px solid #cdbfa6;
+}
+
+.equipment-table th,
+.equipment-table td {
+  border: 1px solid #cdbfa6;
+  padding: 10px;
+  text-align: left;
+}
+
+.equipment-table th {
+  background-color: #d2a34b;
+  color: #6F5643;
+}
+
+.small-note {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.site-video {
+  width: 100%;
+  max-width: 900px;
+  border: 1px solid #cdbfa6;
+}
+
 @media (max-width: 800px) {
   .nav {
     float: none;
@@ -286,6 +326,11 @@ audio {
 
   .footer-center {
     margin: 10px 0;
+  }
+
+  .studio-left, .studio-right {
+    float: none;
+    width: 100%;
   }
 }
 
