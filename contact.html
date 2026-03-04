@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Studio | Jordan Beadle</title>
-  <meta name="description" content="Jordan Beadle studio page with equipment overview and setup photos.">
-  <meta name="keywords" content="Jordan Beadle, studio, mixing, equipment, interface, monitors, microphones">
+  <title>Contact | Jordan Beadle</title>
+
+  <meta name="description" content="Contact Jordan Beadle for mixing, mastering, production, or lessons.">
+  <meta name="keywords" content="Jordan Beadle, contact, mixing, mastering, production, lessons">
   <meta name="author" content="Jordan Beadle">
 
   <link rel="stylesheet" href="styles.css">
@@ -37,68 +38,57 @@
   <main>
     <div class="section">
       <div class="container">
-        <h2>The Studio</h2>
+        <h2>Contact</h2>
         <p>
-          This page shows my basic setup and some of the tools I use. My goal is a clean signal chain
-          and accurate monitoring so mixes translate well across speakers and headphones.
+          Use this form to reach out about mixing, mastering, production, or lessons.
+          I usually respond within 24 hours.
         </p>
 
-        <div class="studio-left">
-          <img class="photo" src="images/studio.jpg" alt="Studio setup photo">
-          <div class="caption">Studio setup</div>
-        </div>
+        <form class="contact-form" action="#" method="post">
+          <div class="form-row">
+            <label for="fullName">Your Name *</label>
+            <input type="text" id="fullName" name="fullName" required>
+          </div>
 
-        <div class="studio-right">
-          <img class="photo" src="images/interfaces.jpg" alt="Additional studio equipment photo">
-          <div class="caption">Focusrite Scarlett 18i20</div>
-        </div>
+          <div class="form-row">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
 
-        <div class="clear"></div>
-      </div>
-    </div>
+          <div class="form-row">
+            <label for="projectType">Type of Project *</label>
+            <select id="projectType" name="projectType" required>
+              <option value="">Select one...</option>
+              <option value="mixing">Mixing</option>
+              <option value="mastering">Mastering</option>
+              <option value="production">Production</option>
+              <option value="lessons">Lessons</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
 
-    <div class="section">
-      <div class="container">
-        <h2>Equipment List</h2>
-        <p>
-          A quick overview of some equipment I regularly use.
-        </p>
+          <div class="form-row">
+            <label for="timeline">Timeline (optional)</label>
+            <input type="text" id="timeline" name="timeline" placeholder="Example: 2 weeks, ASAP, flexible">
+          </div>
 
-        <table class="equipment-table">
-          <tr>
-            <th>Category</th>
-            <th>Gear</th>
-            <th>What I use it for</th>
-          </tr>
-          <tr>
-            <td>Audio Interface</td>
-            <td>Focusrite Scarlett 18i20 x2</td>
-            <td>Recording and clean signal input/output</td>
-          </tr>
-          <tr>
-            <td>Monitors</td>
-            <td>Adam Audio T8V x2</td>
-            <td>Accurate mixing decisions and translation</td>
-          </tr>
-          <tr>
-            <td>Headphones</td>
-            <td>Sennheiser HD 600</td>
-            <td>Detailed editing, balancing, and low-end checks</td>
-          </tr>
-          <tr>
-            <td>Computer</td>
-            <td>Mac Studio M2</td>
-            <td>Powerful processors for huge intensive projects</td>
-          </tr>
-        </table>
+          <div class="form-row">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
 
-        <!-- Email link -->
-        <p>
-          If you want to ask about the setup or a project, email me here:
+          <div class="form-row">
+            <input class="btn" type="submit" value="Send Message">
+          </div>
+        </form>
+
+        <p class="small-note">
+          If you prefer email, you can also message me here:
           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jsbeadle@asu.edu" target="_blank" rel="noreferrer">
             Send an email
           </a>
         </p>
+
       </div>
     </div>
   </main>

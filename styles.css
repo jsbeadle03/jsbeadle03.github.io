@@ -289,6 +289,41 @@ audio {
   border: 1px solid #cdbfa6;
 }
 
+/* Contact Form */
+.contact-form {
+  background-color: #ffffff;
+  border: 1px solid #cdbfa6;
+  padding: 14px;
+  max-width: 700px;
+}
+
+.form-row {
+  margin-bottom: 12px;
+}
+
+.form-row label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row select,
+.form-row textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cdbfa6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #6F5643;
+  background-color: #ECE6C2;
+}
+
+.form-row textarea {
+  resize: vertical;
+}
+
 @media (max-width: 800px) {
   .nav {
     float: none;
